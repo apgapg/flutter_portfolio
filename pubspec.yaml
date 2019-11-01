@@ -50,9 +50,7 @@ flutter:
         - asset: assets/fonts/nunitoSemiBold.ttf
         - asset: assets/fonts/nunitoBold.ttf
           weight: 700
-    - family:  MyIcons
-      fonts:
-        - asset: assets/fonts/MyIcons.ttf
+
 
   assets:
       - assets/images/avatar.png
