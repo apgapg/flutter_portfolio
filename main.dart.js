@@ -37729,7 +37729,7 @@ u=u[3]
 return Math.sqrt(t*t+s*s+r*r+u*u)}}
 F.BK.prototype={
 L:function(a){var u=X.Sa(null,"Nunito",C.pb)
-return new S.oG(new X.o9(Y.WK(),null),"Flutter Demo",u,!1,null)}};(function aliases(){var u=H.nM.prototype
+return new S.oG(new X.o9(Y.WK(),null),"Ayush P Gupta",u,!1,null)}};(function aliases(){var u=H.nM.prototype
 u.zH=u.p
 u=H.pK.prototype
 u.Ar=u.aE
