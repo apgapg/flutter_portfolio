@@ -65,10 +65,10 @@ class ArtPage extends StatelessWidget {
                     children: <Widget>[
                       for (var url in _list)
                         InkWell(
-                          child: ExtendedImage.network(
+                          child: Image.network(
                             url,
                             fit: BoxFit.cover,
-                            cache: true,
+                            //cache: true,
                           ),
                           onTap: () {
                             _onImageTap(url, context);
@@ -96,10 +96,10 @@ class ArtPage extends StatelessWidget {
         children: <Widget>[
           Stack(
             children: <Widget>[
-              ExtendedImage.network(
+              Image.network(
                 url,
                 fit: BoxFit.cover,
-                cache: true,
+                //cache: true,
               ),
               Positioned(
                 right: 0,
