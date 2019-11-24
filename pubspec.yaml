@@ -27,6 +27,21 @@ dependencies:
   font_awesome_flutter: ^8.2.0
   preload_page_view: ^0.1.4
   url_launcher: ^5.2.5
+  extended_image: ^0.6.5
+
+dependency_overrides:
+  extended_image_library:
+    git:
+      url: https://github.com/fluttercandies/extended_image_library.git
+      ref: dev
+  path_provider_fde:
+    git:
+      url: https://github.com/google/flutter-desktop-embedding/
+      path: plugins/flutter_plugins/path_provider_fde
+  url_launcher_fde:
+    git:
+      url: https://github.com/google/flutter-desktop-embedding/
+      path: plugins/flutter_plugins/url_launcher_fde
 
 dev_dependencies:
   flutter_test:

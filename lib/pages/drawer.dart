@@ -14,6 +14,7 @@ class LeftDrawer extends StatelessWidget {
     "EDUCATION",
     "WORK",
     "SKILLS",
+    "ARTS/SKETCHES",
     "CONTACT"
   ];
 
@@ -77,7 +78,8 @@ class LeftDrawer extends StatelessWidget {
             SizedBox(
               height: 16,
             ),
-            for (int i = 0; i < list.length; i++) DrawerListTile(list[i], i,onItemTap),
+            for (int i = 0; i < list.length; i++)
+              DrawerListTile(list[i], i, onItemTap),
           ],
         ),
       ),

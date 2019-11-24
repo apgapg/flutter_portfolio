@@ -28,7 +28,7 @@ class _PlaneState extends State<Plane> with SingleTickerProviderStateMixin {
     });
     controller.addStatusListener((status) async {
       if (status == AnimationStatus.completed) {
-        await Future.delayed(Duration(milliseconds: 1000));
+        await Future.delayed(Duration(milliseconds: 100));
         if (controller != null) {
           controller.reset();
           controller.forward();
@@ -53,7 +53,7 @@ class _PlaneState extends State<Plane> with SingleTickerProviderStateMixin {
       children: <Widget>[
         Transform.translate(
           offset: Offset(
-              MediaQuery.of(context).size.width + animation.value + 100.0,
+              MediaQuery.of(context).size.width + animation.value ,
               -28.0),
           child: Image.asset(
             'assets/images/plane_text.png',

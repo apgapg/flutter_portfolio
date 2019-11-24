@@ -1,15 +1,27 @@
 PODS:
   - FlutterMacOS (1.0.0)
+  - path_provider_fde (0.0.1):
+    - FlutterMacOS
+  - url_launcher_fde (0.0.1):
+    - FlutterMacOS
 
 DEPENDENCIES:
   - FlutterMacOS (from `Flutter/ephemeral/.symlinks/flutter/darwin-x64`)
+  - path_provider_fde (from `Flutter/ephemeral/.symlinks/plugins/path_provider_fde/macos`)
+  - url_launcher_fde (from `Flutter/ephemeral/.symlinks/plugins/url_launcher_fde/macos`)
 
 EXTERNAL SOURCES:
   FlutterMacOS:
     :path: Flutter/ephemeral/.symlinks/flutter/darwin-x64
+  path_provider_fde:
+    :path: Flutter/ephemeral/.symlinks/plugins/path_provider_fde/macos
+  url_launcher_fde:
+    :path: Flutter/ephemeral/.symlinks/plugins/url_launcher_fde/macos
 
 SPEC CHECKSUMS:
   FlutterMacOS: 15bea8a44d2fa024068daa0140371c020b4b6ff9
+  path_provider_fde: ac05eee380688ce8414a9003c3ac2d3c106dcbf8
+  url_launcher_fde: 2e3afc0d9c7c0dfe63e0ef42030ec62d56096b38
 
 PODFILE CHECKSUM: f1f125ca80df00541fd3717ba2927f4dff97d9b3
 

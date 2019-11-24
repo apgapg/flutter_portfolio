@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/pages/about_page.dart';
+import 'package:flutter_portfolio/pages/art_page.dart';
 import 'package:flutter_portfolio/pages/contact_page.dart';
 import 'package:flutter_portfolio/pages/drawer.dart';
 import 'package:flutter_portfolio/pages/education_page.dart';
@@ -18,6 +19,9 @@ class HomePage extends StatelessWidget {
     this.context = context;
     var drawer = LeftDrawer(onItemTap);
     var body = PageView(
+      physics: MediaQuery.of(context).size.width < 600
+          ? null
+          : NeverScrollableScrollPhysics(),
       controller: _controller,
       scrollDirection: Axis.vertical,
       children: <Widget>[
@@ -26,6 +30,7 @@ class HomePage extends StatelessWidget {
         EducationPage(),
         WorkPage(),
         SkillsPage(),
+        ArtPage(),
         ContactPage(),
       ],
     );
@@ -60,5 +65,6 @@ class HomePage extends StatelessWidget {
 
   void onItemTap(int index) {
     _controller.jumpToPage(index);
+    if (MediaQuery.of(context).size.width < 600) Navigator.pop(context);
   }
 }
